@@ -1,0 +1,17 @@
+{% extends 'main/template.html' %}
+
+{% block main_section %}
+  {% for post in news %}
+    <div class="col">
+      <h1>{{ post.title }}</h1>
+      <p>{{ post.text }}</p>
+
+      {% if post.author %}
+        <p>Автор: {{ post.author }}</p>
+      {% else %}
+        <p>Автор: Админ</p>
+      {% endif %}
+
+    </div>
+  {% endfor %}
+{% endblock %}

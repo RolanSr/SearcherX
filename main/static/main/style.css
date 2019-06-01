@@ -1,0 +1,50 @@
+*{
+    color:#979797;
+}
+
+body{
+  background-color: #212121;
+}
+
+header{
+  background-color: #252525;
+}
+
+header .navbar{
+  padding: .5rem 0rem;
+}
+
+.brand{
+  color: #979797;
+  font-size: 26px;
+}
+
+
+.brand:hover{
+    color: #979797;
+}
+
+input[type="text"]{
+  background-color: #252525;
+  border: none;
+  width: 100%;
+  color: #626262;
+  padding: 5px 10px;
+  border:none;
+  outline: none;
+}
+
+.path-input{
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+}
+
+.path-input:focus{
+  box-shadow: 3px 3px 5px inline rgba(0,0,0.3);
+}
+
+footer{
+  border-top:1px solid  #1d1d1d;
+}
