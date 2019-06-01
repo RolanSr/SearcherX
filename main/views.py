@@ -1,22 +1,10 @@
 from django.shortcuts import render
+from . import attachments
 
-news = [
-    {
-        'title': 'Наша первая запись',
-        'text': "text text text text text text text text text text text text",
-        'date': 'date date date',
-        'author': 'author',
-    },
-    {
-        'title': 'Наша lol запись',
-        'text': "text2 text2 text2 text2 text2 text2 text2 text2 text2 text2 text2 text2",
-        'date': 'date2 date2 date2',
-    },
-]
 
 def home(request):
     data = {
-        'news':news,
+        'attachments': attachments.getAtachments(),
         'title': 'SearcherX - Main',
     }
     return render(request, 'main/main.html', data)

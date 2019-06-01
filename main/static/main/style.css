@@ -19,6 +19,16 @@ header .navbar{
   font-size: 26px;
 }
 
+.btn_app{
+  display: block;
+  background-color: #252525;
+  border-radius: 1px solid #1d1d1d;
+}
+
+.main_app_content{
+  background-color: #252525;
+  border: 1px solid #1d1d1d;
+}
 
 .brand:hover{
     color: #979797;

@@ -1,17 +1,29 @@
 {% extends 'main/template.html' %}
 
 {% block main_section %}
-  {% for post in news %}
-    <div class="col">
-      <h1>{{ post.title }}</h1>
-      <p>{{ post.text }}</p>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        {% for app in attachments %}
+            <div class="main_app col-md-12">
+              <div class="row justify-content-between">
+                <div class="main_app_content col-md-8">
+                  <div class="main_app_image_block">
 
-      {% if post.author %}
-        <p>Автор: {{ post.author }}</p>
-      {% else %}
-        <p>Автор: Админ</p>
-      {% endif %}
-
+                  </div>
+                  <div class="main_app_text_block">
+                    <h2 class="main_app_h2">{{app.name}}</h2>
+                    <p class="main_app_p">{{app.description}}</p>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <a class="btn_app" href="{{}}" role="button">Link</a>
+                </div>
+              </div>
+            </div>
+        {% endfor %}
+      </div>
     </div>
-  {% endfor %}
+  </div>
+
 {% endblock %}
