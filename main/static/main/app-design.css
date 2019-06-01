@@ -1,0 +1,36 @@
+.main_app_content{
+  background-color:#252525;
+  border-radius: 5px;
+  border: 1px solid #1d1d1d;
+  padding: 20px 15px;
+}
+
+.main_app_content:last-child{
+  margin-bottom: 0;
+}
+
+.main_app_content .main_app_text_block .main_app_h2{
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.main_app_content .main_app_text_block .main_app_p{
+  font-size: 14px;
+  font-weight: bold;
+  color: #5c5c5c;
+  margin-bottom: 0px;
+}
+
+.btn_app{
+  background-color: #252525;
+  padding: 10px 35px;
+  border:1px solid #1d1d1d;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  color:#5c5c5c ;
+}
+
+.btn_app:hover{
+  color:#fafafa;
+}

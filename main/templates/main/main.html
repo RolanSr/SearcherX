@@ -2,22 +2,22 @@
 
 {% block main_section %}
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <div class="row">
         {% for app in attachments %}
-            <div class="main_app col-md-12">
-              <div class="row justify-content-between">
-                <div class="main_app_content col-md-8">
-                  <div class="main_app_image_block">
-
-                  </div>
-                  <div class="main_app_text_block">
-                    <h2 class="main_app_h2">{{app.name}}</h2>
-                    <p class="main_app_p">{{app.description}}</p>
+            <div class="main_app col-md-12 mb-4 ">
+              <div class="row justify-content-between align-items-center">
+                <div class="main_app_content col-lg-9">
+                  <div class="row pt-1 pb-1 pl-3 pr-3">
+                      <img src="/static/main/{{app.image_path}}" class="img-fluid">
+                    <div class="main_app_text_block col align-self-center ml-4">
+                      <h2 class="main_app_h2">{{app.name}}</h2>
+                      <p class="main_app_p">{{app.description}}</p>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-3">
-                  <a class="btn_app" href="{{}}" role="button">Link</a>
+                <div class="col-lg-2 ml-lg-auto ml-md-0">
+                  <a class="btn_app btn stretched-link" href="/{{ app.href }}" role="button">Запустить</a>
                 </div>
               </div>
             </div>
